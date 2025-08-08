@@ -1,0 +1,1340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 100vh;
+}
+
+header::before {
+    content: "";
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg') no-repeat top center;
+    z-index: -2;
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    opacity: 0.3;
+    object-fit: cover;
+}
+
+header img {
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: 117px;
+
+}
+
+.but {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 130px;
+}
+
+
+
+.btn1 {
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 100px;
+    color: white;
+    /* font-size: x-large; */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+
+.btn2 {
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    color: white;
+    /* font-size: x-large; */
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: rgb(168, 0, 0);
+}
+
+.sec {
+    height: 100%;
+    margin: 3px 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 75px;
+    margin: 0px;
+    width: 711px;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 23px;
+    font-weight: 600;
+}
+
+p {
+    margin: 0px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+input[type="email"] {
+    padding: 18px 100px;
+    border-radius: 4px;
+    /* font-size: x-large; */
+    font-weight: bold;
+    opacity: 0.5;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
+.sec input[type="submit"] {
+    padding: 19px 45px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(255, 1, 1);
+    border: 2px solid rgb(255, 0, 0);
+    /* font-size: xx-large; */
+    font-weight: bold;
+}
+
+
+input[type="submit"]:hover {
+    background-color: rgb(173, 0, 0);
+}
+
+.curve {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 0 130px;
+}
+
+.main {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* margin: 0 130px; */
+}
+
+.main::-webkit-scrollbar {
+    width: 0;
+}
+
+.curve img {
+    margin: 37px 20px;
+    height: 255px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    content: "1";
+    transition: transform 0.3s ease;
+}
+
+.curve img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+div h3 {
+    float: left;
+    margin-top: -174px;
+    font-size: 112px;
+    margin-left: 0 0;
+    position: relative;
+    left: -4px;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke-color: rgb(255, 253, 253);
+    -webkit-text-stroke-width: 1px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+h2 {
+    position: relative;
+    left: 136px;
+    display: inline-block;
+    margin: 0px 12px;
+    font-size: 20px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 12px;
+}
+
+.clrbox {
+    /*height: 339px; */
+    width: 235px;
+    margin: 46px 1px;
+    background: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg) no-repeat center center / cover;
+    border-radius: 16px;
+    margin-left: 15px;
+}
+
+.clrbox h4 {
+    font-size: 21px;
+    text-align: left;
+    margin: 40px 20px;
+}
+
+.clrbox p {
+    font-size: 13px;
+    margin: 75px 20px;
+    margin-top: -23px;
+}
+
+.mon {
+    height: 87px;
+    float: right;
+    margin-top: -13px;
+}
+
+.dow {
+    height: 50px;
+    margin-right: 14px;
+    float: right;
+    margin-top: -32px;
+}
+
+.telescope {
+    height: 66px;
+    float: right;
+    margin-top: -6px;
+}
+
+.propink {
+    position: relative;
+    right: 45px;
+    height: 44px;
+    float: right;
+    margin-top: -50px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.prored {
+    position: relative;
+    right: 24px;
+    /* top: 10px; */
+    height: 44px;
+    float: right;
+    margin-top: -31px;
+    border-radius: 8px;
+    z-index: 354545;
+}
+
+.que {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 135px;
+    margin-top: 0;
+    flex-grow: 2px;
+    flex-shrink: 2px;
+}
+
+.ques {
+    background-color: rgb(50, 50, 50);
+    font-size: 31px;
+    margin: 5px 0;
+
+}
+
+.ques:hover {
+    background-color: rgb(81, 81, 81);
+}
+
+.ques h6 {
+    margin: 19px 31px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.ques p {
+    margin: -1px 31px;
+    font-weight: 200;
+    display: flex;
+    float: right;
+    font-size: 55px;
+    cursor: pointer;
+
+}
+
+span {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 136px;
+    margin-top: 70px;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log input[type='email'] {
+    padding: 17px 179px;
+    border-radius: 4px;
+    /* font-size: x-large; */
+    font-weight: bold;
+    opacity: 0.5;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
+.log input[type="submit"] {
+    padding: 19px 45px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(255, 1, 1);
+    /* font-size: xx-large; */
+    font-weight: bold;
+}
+
+.tel {
+    display: flex;
+    float: left;
+    margin-left: 150px;
+    color: rgb(173, 173, 173);
+    margin-top: 60px;
+    font-weight: 500;
+}
+
+.tel a {
+    font-weight: 500;
+    color: rgb(173, 173, 173);
+    display: inline;
+}
+
+ul {
+    display: block;
+    font-size: 13px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    margin-top: 170px;
+}
+
+li {
+    font-weight: 500;
+    list-style: none;
+    padding: 10px 0px;
+
+}
+
+li a {
+    color: rgb(173, 173, 173);
+}
+
+.btn3 {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 18px;
+    border-radius: 8px;
+    width: 108px;
+    color: white;
+    /* font-size: 20px; */
+    font-weight: bold;
+    cursor: pointer;
+    margin: 9px 150px
+}
+
+.btn3:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.by p {
+    font-size: 15px;
+    margin: 3px 139px;
+    line-height: 60px;
+}
+
+/* < Extra media quary > */
+@media (min-width:1024px) and (max-width:1042px) {
+    .box {
+        width: 72%;
+    }
+}
+
+
+/* < Tablet MediaQuary > */
+@media (min-width:768px) and (max-width:1042px) {
+    h1 {
+        font-size: 44px;
+        width: 420px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    form {
+        display: flex;
+    }
+
+    input[type="email"] {
+        padding: 20px 30px;
+    }
+
+    .sec input[type="submit"] {
+        padding: 12px 25px;
+    }
+
+    .box {
+        width: 73%;
+        margin-left: 106px;
+    }
+
+    .curve {
+        margin: 0 27px;
+    }
+
+    .curve img {
+        margin: 8px 20px;
+        height: 175px;
+    }
+
+    div h3 {
+        margin-top: -112px;
+        font-size: 81px;
+        left: 2px;
+    }
+
+    h2 {
+        position: relative;
+        left: 21px;
+        margin: 6px;
+    }
+
+    .box {
+        width: 96%;
+        margin-left: 25px;
+    }
+
+    .clrbox {
+        width: 47%;
+        margin: 8px;
+    }
+
+    span {
+        margin-top: 35px;
+        margin-left: 38px;
+    }
+
+    .que {
+        display: flex;
+        flex-grow: 2px;
+        flex-shrink: 2px;
+    }
+
+    .ques {
+        font-size: 18px;
+        width: 102%;
+    }
+
+    .ques p {
+        width: 12px;
+    }
+
+    .log input[type="email"] {
+        margin: 14px -517px;
+        margin-left: -5px;
+        position: relative;
+        left: -249px;
+        padding: 16px 98px;
+    }
+
+    .log input[type="submit"] {
+        padding: 15px 40px;
+        margin-top: 12px;
+    }
+
+    .que {
+        margin: 7px 37px;
+    }
+
+    .fo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tel {
+        position: relative;
+        right: 105px;
+        font-size: 14px;
+    }
+
+    .btn3 {
+        position: relative;
+        right: 111px;
+        font-size: 11px;
+    }
+
+    .by p {
+        font-size: 12px;
+        margin: 14px 43px;
+        line-height: 14px;
+    }
+
+    ul {
+        display: block;
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-top: 104px;
+        margin-left: 47px;
+    }
+}
+
+
+/* < Mobile L MediaQuary > */
+@media (min-width:425px) and (max-width:767px) {
+
+    header::before {
+        content: "";
+        background: url('https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg') no-repeat top center;
+        z-index: -2;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 33px;
+        width: 100%;
+        margin-top: -178px;
+    }
+
+    h5 {
+        font-size: 12px;
+        width: 100%;
+        margin: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .but form {
+        display: flex;
+        position: relative;
+        left: 111px;
+    }
+
+    input[type="email"] {
+        padding: 11px 88px;
+    }
+
+    .sec {
+        margin: 0;
+    }
+
+    .sec input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+    }
+
+    header img {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        height: 50px;
+    }
+
+    .btn1 {
+        font-size: 8px;
+        padding: 7px 3px;
+        width: 58px;
+    }
+
+    .btn2 {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .curve {
+        margin: 0 27px;
+    }
+
+    .curve img {
+        margin: 8px 20px;
+        height: 175px;
+    }
+
+    div h3 {
+        margin-top: -112px;
+        font-size: 81px;
+        left: 2px;
+    }
+
+    h2 {
+        position: relative;
+        left: 21px;
+        margin: 6px;
+    }
+
+    .clrbox {
+        height: 164px;
+        width: 90%;
+        margin: 5px 0px;
+        margin-left: 3px;
+    }
+
+    .clrbox h4 {
+        margin: 28px 20px;
+    }
+
+    .clrbox p {
+        width: 200px;
+    }
+
+    .mon {
+        margin-top: -116px;
+    }
+
+    .dow {
+        margin-top: -95px;
+    }
+
+    .telescope {
+        margin-top: -96px;
+        margin-right: 7px;
+    }
+
+    .prored {
+        margin-top: -101px;
+    }
+
+    .propink {
+        margin-top: -118px;
+    }
+
+    span {
+        margin-top: 35px;
+        margin-left: 38px;
+    }
+
+    .que {
+        display: flex;
+        flex-grow: 2px;
+        flex-shrink: 2px;
+    }
+
+    .ques {
+        font-size: 18px;
+        width: 103%;
+    }
+
+    .ques p {
+        width: 12px;
+    }
+
+    .log input[type="email"] {
+        margin: 9px -206px;
+        margin-left: -5px;
+        position: relative;
+        left: -91px;
+        padding: 11px 15px;
+    }
+
+    .log input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+    }
+
+    .que {
+        margin: 7px 37px;
+    }
+
+    .fo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tel {
+        position: relative;
+        right: 105px;
+        font-size: 14px;
+    }
+
+    .btn3 {
+        position: relative;
+        right: 111px;
+        font-size: 11px;
+    }
+
+    .by p {
+        font-size: 12px;
+        margin: 14px 43px;
+        line-height: 14px;
+    }
+
+    ul {
+        display: block;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-top: 104px;
+        margin-left: 47px;
+    }
+}
+
+
+/* < Mobile M MediaQuary > */
+@media (min-width:375px) and (max-width:424px) {
+    header::before {
+        content: "";
+        background: url('https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg') no-repeat top center;
+        z-index: -2;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 33px;
+        width: 100%;
+        margin-top: -178px;
+    }
+
+    h5 {
+        font-size: 12px;
+        width: 100%;
+        margin: 8px;
+    }
+
+    p {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .tel p {
+        width: 14rem;
+    }
+
+    .but form {
+        display: flex;
+        position: relative;
+        left: 111px;
+    }
+
+    input[type="email"] {
+        padding: 11px 88px;
+    }
+
+    .sec {
+        margin: 0;
+    }
+
+    .sec input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+    }
+
+    header img {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        height: 50px;
+    }
+
+    .btn1 {
+        font-size: 8px;
+        padding: 7px 3px;
+        width: 58px;
+    }
+
+    .btn2 {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .curve {
+        margin: 0 27px;
+    }
+
+    .curve img {
+        margin: 8px 20px;
+        height: 175px;
+    }
+
+    div h3 {
+        margin-top: -112px;
+        font-size: 81px;
+        left: 2px;
+    }
+
+    h2 {
+        position: relative;
+        left: 21px;
+        margin: 6px;
+    }
+
+    .clrbox {
+        height: 164px;
+        width: 87%;
+        margin: 5px 0px;
+        margin-left: 3px;
+    }
+
+    .clrbox h4 {
+        margin: 28px 20px;
+    }
+
+    .clrbox p {
+        width: 200px;
+    }
+
+    .mon {
+        margin-top: -116px;
+    }
+
+    .dow {
+        margin-top: -95px;
+    }
+
+    .telescope {
+        margin-top: -96px;
+        margin-right: 7px;
+    }
+
+    .prored {
+        margin-top: -101px;
+    }
+
+    .propink {
+        margin-top: -118px;
+    }
+
+    span {
+        margin-top: 35px;
+        margin-left: 38px;
+    }
+
+    .que {
+        display: flex;
+        flex-grow: 2px;
+        flex-shrink: 2px;
+    }
+
+    .ques {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .ques p {
+        width: 12px;
+    }
+
+    .log input[type="email"] {
+        margin: 16px -168px;
+        margin-left: 21px;
+        position: relative;
+        left: -91px;
+        padding: 11px 15px;
+    }
+
+    .log input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+    }
+
+    .que {
+        margin: 7px 37px;
+    }
+
+    .fo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tel {
+        position: relative;
+        right: 105px;
+        font-size: 14px;
+    }
+
+    .btn3 {
+        position: relative;
+        right: 111px;
+        font-size: 11px;
+        width: 20%;
+    }
+
+    .by p {
+        font-size: 12px;
+        margin: 14px 43px;
+        line-height: 14px;
+    }
+
+    ul {
+        display: block;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-top: 104px;
+        margin-left: 45px;
+    }
+}
+
+/* < Mobile S MediaQuary > */
+@media (min-width:320px) and (max-width:374px) {
+    header::before {
+        content: "";
+        background: url('https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg') no-repeat top center;
+        z-index: -2;
+        position: absolute;
+        height: 110%;
+        width: 100%;
+        opacity: 0.3;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 29px;
+        width: 99%;
+        margin-top: -205px;
+    }
+
+    h5 {
+        font-size: 12px;
+        width: 100%;
+        margin: 8px;
+    }
+
+    p {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .tel p {
+        width: 14rem;
+    }
+
+    .but form {
+        display: flex;
+        position: relative;
+        left: 111px;
+    }
+
+    input[type="email"] {
+        padding: 11px 38px;
+    }
+
+    .sec {
+        margin: 0;
+    }
+
+    .sec input[type="submit"] {
+        padding: 10px 12px;
+        margin-top: 12px;
+    }
+
+    header img {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        height: 50px;
+    }
+
+    .btn1 {
+        font-size: 8px;
+        padding: 7px 3px;
+        width: 58px;
+    }
+
+    .btn2 {
+        font-size: 9px;
+        padding: 2px 6px;
+    }
+
+    .curve {
+        margin: 0 27px;
+    }
+
+    .curve img {
+        margin: 8px 20px;
+        height: 175px;
+    }
+
+    div h3 {
+        margin-top: -112px;
+        font-size: 81px;
+        left: 2px;
+    }
+
+    h2 {
+        position: relative;
+        left: 21px;
+        margin: 6px;
+    }
+
+    .clrbox {
+        height: 164px;
+        width: 87%;
+        margin: 5px 0px;
+        margin-left: 3px;
+    }
+
+    .clrbox h4 {
+        margin: 28px 20px;
+    }
+
+    .clrbox p {
+        width: 200px;
+    }
+
+    .mon {
+        margin-top: -116px;
+    }
+
+    .dow {
+        margin-top: -95px;
+    }
+
+    .telescope {
+        margin-top: -96px;
+        margin-right: 7px;
+    }
+
+    .prored {
+        margin-top: -101px;
+    }
+
+    .propink {
+        margin-top: -118px;
+    }
+
+    span {
+        margin-top: 35px;
+        margin-left: 38px;
+    }
+
+    .que {
+        display: flex;
+        flex-grow: 2px;
+        flex-shrink: 2px;
+    }
+
+    .ques {
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .ques h6 {
+        margin: 24px 8px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .ques p {
+        width: 9px;
+        font-weight: 500;
+    }
+
+    .log input[type="email"] {
+        margin: 16px -110px;
+        margin-left: 21px;
+        position: relative;
+        left: -61px;
+        padding: 11px 15px;
+    }
+
+    .log input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+    }
+
+    .que {
+        margin: 7px 37px;
+    }
+
+    .fo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tel {
+        position: relative;
+        right: 105px;
+        font-size: 14px;
+    }
+
+    .btn3 {
+        font-size: 9px;
+        margin-left: 45px;
+        width: 28%;
+        margin-top: 20px;
+    }
+
+    .by p {
+        font-size: 12px;
+        margin: 14px 43px;
+        line-height: 14px;
+    }
+
+    ul {
+        display: block;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-top: 104px;
+        margin-left: 45px;
+    }
+}
+
+
+/* < from 0 Width MediaQuary > */
+@media (min-width:50px) and (max-width:319px) {
+    header::before {
+        content: "";
+        background: url('https://assets.nflxext.com/ffe/siteui/vlv3/a927b1ee-784d-494a-aa80-cf7a062d2523/web/IN-en-20250714-TRIFECTA-perspective_5acb7337-c372-45ec-ae12-ddb110e6ad78_large.jpg') no-repeat top center;
+        z-index: -2;
+        position: absolute;
+        height: 100%;
+        width: 150%;
+        opacity: 0.3;
+        object-fit: cover;
+    }
+
+    .sec {
+        margin: 0px 205px;
+
+    }
+
+    h1 {
+        font-size: 33px;
+        width: 308px;
+        margin-top: -178px;
+    }
+
+    h5 {
+        font-size: 10px;
+        width: 160px;
+        margin: 8px;
+    }
+
+    p {
+        font-size: 13px;
+        width: 242px;
+    }
+
+    .but form {
+        display: flex;
+        position: relative;
+        left: 184px;
+    }
+
+    input[type="email"] {
+        padding: 11px 88px;
+    }
+
+    .sec input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+    }
+
+    header img {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        height: 50px;
+    }
+
+    .btn1 {
+        font-size: 11px;
+        padding: 7px 3px;
+        width: 69px;
+    }
+
+    .btn2 {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+
+    .curve {
+        margin: 0 27px;
+        width: 357px;
+    }
+
+    .curve img {
+        margin: 8px 20px;
+        height: 175px;
+    }
+
+    div h3 {
+        margin-top: -112px;
+        font-size: 81px;
+        left: 2px;
+    }
+
+    h2 {
+        position: relative;
+        left: 30px;
+        margin: 6px;
+    }
+
+    .box {
+        width: 378px;
+    }
+
+    .clrbox {
+        height: 164px;
+        width: 377px;
+        margin: 5px 0px;
+        margin-left: 35px;
+    }
+
+    .clrbox h4 {
+        margin: 28px 20px;
+    }
+
+    .clrbox p {
+        width: 200px;
+    }
+
+    .mon {
+        margin-top: -116px;
+    }
+
+    .dow {
+        margin-top: -95px;
+    }
+
+    .telescope {
+        margin-top: -96px;
+        margin-right: 7px;
+    }
+
+    .prored {
+        margin-top: -101px;
+    }
+
+    .propink {
+        margin-top: -118px;
+    }
+
+    span {
+        position: relative;
+        left: 30px;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    .ques {
+        font-size: 18px;
+        width: 343px;
+    }
+
+    .ques p {
+        width: 12px;
+    }
+
+    .log input[type="email"] {
+        margin: 8px -190px;
+        margin-left: 5px;
+        position: relative;
+        left: -49px;
+        padding: 11px 15px;
+    }
+
+    .log input[type="submit"] {
+        padding: 10px 25px;
+        margin-top: 12px;
+        position: relative;
+        right: -50px;
+    }
+
+    .que {
+        margin: 7px 37px;
+    }
+
+    .fo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tel {
+        position: relative;
+        right: 105px;
+        font-size: 14px;
+    }
+
+    .by p {
+        font-size: 12px;
+        margin: 14px 43px;
+        line-height: 14px;
+    }
+
+    ul {
+        display: block;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-top: 104px;
+        margin-left: 8px;
+    }
+}
